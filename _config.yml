@@ -1,14 +1,30 @@
 # Site settings
 title: ICSME 2016
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+author:
+  name: ICSME 2016
+  email: icsme2016@dev.null
+  github: icsme2016
+  twitter: IEEEICSME
+description: > # this means to ignore newlines until "keywords:"
+  The International Conference on Software Maintenance and Evolution (ICSME) is the premier international forum for researchers and practitioners from academia, industry, and government to present, discuss, and debate the most recent ideas, experiences, and challenges in software maintenance and evolution.
+
+  ICSME 2016, the 32nd in the conference series, will be held in Raleigh, North Carolina, USA. Known as the City of Oaks for its many oak trees, Raleigh is the capital of the state of North Carolina and part of the famous Research Triangle, which is a major center for high-tech and biotech research. Raleigh's historic landmarks and cosmopolitan offerings, from prominent public museums to a diverse culinary scene, make it a one-of-a-kind cultural and entertainment center of the Southeastern US.
+keywords: IEEE ICSME ICSM Software Maintenance Evolution Research
+baseurl: ""
+url: "http://icsme2016.github.io"
+analytics:
+  google:
+    tracking_id: 'UA-60990076-1'
 
 # Build settings
+timezone: America/New_York
+encoding: utf-8
 markdown: kramdown
+permalink: pretty
+gems:
+  - jekyll-sitemap
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md

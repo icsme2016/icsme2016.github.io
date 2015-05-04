@@ -8,6 +8,13 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 80px;
 }
+
+.navbar-brand {
+   font-size: 20px;
+   font-weight: 400;
+   padding-top: 12px;
+}
+
 .footer {
   position: absolute;  
   bottom: 0;
