@@ -6,9 +6,13 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 80px;
+   margin-bottom: 80px;
+   padding-top: 50px;
 }
 
+.navbar-inverse .navbar-brand {
+   color: #fff;
+}
 .navbar-brand {
    font-size: 20px;
    font-weight: 400;
@@ -16,7 +20,7 @@ body {
 }
 
 .footer {
-  position: absolute;  
+  position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -31,4 +35,9 @@ body {
 
 .container .text-muted {
   margin: 20px 0;
+}
+
+img.team-face {
+   /* width: 160px; */
+   padding-bottom: 10px;
 }
