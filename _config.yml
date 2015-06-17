@@ -12,9 +12,7 @@ description: > # this means to ignore newlines until "keywords:"
 keywords: IEEE ICSME ICSM Software Maintenance Evolution Research
 baseurl: ""
 url: "http://icsme2016.github.io"
-analytics:
-  google:
-    tracking_id: 'UA-60990076-1'
+repo: https://github.com/icsme2016/icsme2016.github.io
 
 # Build settings
 timezone: America/New_York

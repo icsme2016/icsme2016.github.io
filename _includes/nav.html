@@ -1,43 +1,44 @@
-<!-- <nav class="navbar navbar-default" role="navigation"> -->
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<header class="navbar navbar-fixed-top icsme2016-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">{{site.title}}</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".icsme2016-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">{{site.title}}</a>
     </div>
-
-    <div id="navbar" class="navbar-collapse collapse">
+    <nav class="collapse navbar-collapse icsme2016-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-
-        <li><a href="events.html">Events</a></li>
-
+        <li{% if page.slug == "home" %} class="active"{% endif %}>
+          <a href="/">Home</a>
+        </li>
+        <!-- <li{% if page.slug == "dates" %} class="active"{% endif %}> -->
+        <!--   <a href="/dates.html">Important Dates</a> -->
+        <!-- </li> -->
+        <!-- <li{% if page.slug == "calls" %} class="active"{% endif %}> -->
+        <!--   <a href="/calls.html">Calls for Papers</a> -->
+        <!-- </li> -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="organizing-committee.html">Organizing Committee</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Co-Located Events <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">SCAM</a></li>
+            <li><a href="#">SSBSE</a></li>
+            <li><a href="#">MESOCA</a></li>
+          </ul>
+        </li>
+        <li class="dropdown {% if page.slug == "team" %}active{% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/team/organizing-committee.html">Organizing Committee</a></li>
             <li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>
           </ul>
         </li>
-
-        <li><a href="venue.html">Venue</a></li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Past Conferences <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="http://www.icsme.uni-bremen.de/">ICSME 2015  (Bremen)</a></li>
-            <li><a href="http://www.icsme.org/">ICSME 2014 (Victoria)</a></li>
-            <li><a href="http://icsm2013.tue.nl/">ICSM 2013 (Eindhoven)</a></li>
-          </ul>
+        <li{% if page.slug == "venue" %} class="active"{% endif %}>
+          <a href="/venue.html">Venue</a>
         </li>
-
-        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
+    </nav>
   </div>
-</nav>
+</header>
