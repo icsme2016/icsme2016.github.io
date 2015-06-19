@@ -8,19 +8,8 @@
 
     {% include nav.html %}
 
-    <div class="icsme2016-header" id="content">
-      <div class="container">
-      </div>
-    </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h4 class="icsme2016-title text-primary">32<sup>nd</sup> International Conference on Software Maintenance and Evolution</h4>
-          <h4 class="icsme2016-subtitle text-primary">Raleigh, North Carolina, USA</h4>
-          <h4 class="icsme2016-endtitle text-primary">October 2&ndash;9, 2016</h4>
-        </div>
-      </div>
+      {% include page-header.html %}
       <div class="row">
         <div class="col-md-8" role="main">
           {{ content }}
@@ -30,8 +19,6 @@
             <div class="panel-heading">
               <h3 class="panel-title">News</h3>
             </div>
-            <!-- <div class="panel-body"> -->
-            <!-- </div> -->
             <ul class="list-group">
               <li class="list-group-item">
                 <h5 class="list-group-item-heading">June 16, 2015</h5>
