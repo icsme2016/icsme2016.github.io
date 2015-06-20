@@ -2,6 +2,12 @@ body {
   position: relative;
 }
 
+.photo-credit {
+  padding-top: 0.3em;
+  font-size: 0.6em;
+  text-align: left;
+}
+
 /*
  * icsme2016-footer
  */
