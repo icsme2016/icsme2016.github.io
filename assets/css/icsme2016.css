@@ -8,6 +8,26 @@ body {
   text-align: left;
 }
 
+.diamond {
+   background-color:#4ee2ec;
+   /* color:#b9f2ff; */
+}
+.platinum {
+   background-color:#e5e4e2;
+}
+.gold {
+   background-color:#ffd700;
+}
+.silver {
+   background-color:#c0c0c0;
+}
+.bronze {
+   background-color:#cd7f32;
+}
+.copper {
+   background-color:#b87333;
+}
+
 /*
  * icsme2016-footer
  */
