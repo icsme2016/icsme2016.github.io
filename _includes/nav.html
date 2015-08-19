@@ -14,12 +14,11 @@
         <li{% if page.slug == "home" %} class="active"{% endif %}>
           <a href="/">Home</a>
         </li>
-        <!-- <li{% if page.slug == "dates" %} class="active"{% endif %}> -->
-        <!--   <a href="/dates.html">Important Dates</a> -->
-        <!-- </li> -->
         <li class="dropdown {% if page.slug == "cfp" %}active{% endif %}">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Call for Papers <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li><a href="/cfp/dates.html">Important Dates</a></li>
+            <li role="separator" class="divider"></li>
             <li><a href="/cfp/research-track.html">Research Track</a></li>
             <li><a href="/cfp/era-track.html">ERA Track</a></li>
             <li><a href="/cfp/industry-track.html">Industry Track</a></li>
