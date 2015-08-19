@@ -1,0 +1,12 @@
+---
+layout: default
+title: Archived News
+---
+
+<h2>Archived News</h2>
+
+{% for post in site.posts limit:10 %}
+<h3>{{ post.date | date: "%B %-d, %Y" }}</h3>
+<p class="text-justify">{{ post.title }}</p>
+{% endfor %}
+
