@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    {% include nav.html %}
+
+    <div class="container">
+      {% include page-header.html %}
+      <div class="row">
+        <div class="col-xs-12">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include supporters-footer.html %}
+  </body>
+</html>

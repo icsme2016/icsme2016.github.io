@@ -27,6 +27,21 @@ body {
 .copper {
    background-color:#b87333;
 }
+.bronze-text {
+   color:#cd7f32;
+}
+.sublead {
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.4;
+  color:#cd7f32;
+}
+@media (min-width: 768px) {
+  .sublead {
+    font-size: 18px;
+  }
+}
 
 .mirror {
   display: inline-block;
