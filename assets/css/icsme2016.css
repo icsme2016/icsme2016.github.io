@@ -49,6 +49,9 @@ body {
 .copper {
    background-color:#b87333;
 }
+.gold-text {
+   color:#ffd700;
+}
 .bronze-text {
    color:#cd7f32;
 }
@@ -57,7 +60,6 @@ body {
   font-size: 14px;
   font-weight: 200;
   line-height: 1.4;
-  color:#cd7f32;
 }
 @media (min-width: 768px) {
   .sublead {
