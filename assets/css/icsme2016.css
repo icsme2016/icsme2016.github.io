@@ -70,6 +70,13 @@ body {
   }
 }
 
+tr.c {
+  text-align:center;
+}
+.table > tbody > tr > td.m {
+  vertical-align:middle;
+}
+
 .mirror {
   display: inline-block;
   -moz-transform: scale(-1, 1);
