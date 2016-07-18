@@ -11,9 +11,9 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li{% if page.slug == "home" %} class="active"{% endif %}>
-          <a href="/">Home</a>
-        </li>
+        <!-- <li{% if page.slug == "home" %} class="active"{% endif %}> -->
+        <!--   <a href="/">Home</a> -->
+        <!-- </li> -->
         <li{% if page.slug == "register" %} class="active"{% endif %}>
           <a href="/register.html">Registration</a>
         </li>
@@ -53,6 +53,12 @@
             <!-- <li><a href="#">Separated link</a></li> -->
           </ul>
         </li>
+        <li{% if page.slug == "venue" %} class="active"{% endif %}>
+          <a href="/venue.html">Venue</a>
+        </li>
+        <li{% if page.slug == "events" %} class="active"{% endif %}>
+          <a href="/social-events.html">Social Events</a>
+        </li>
         <li class="dropdown {% if page.slug == "team" %}active{% endif %}">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team <span class="caret"></span></a>
           <!-- <ul class="dropdown-menu inverse-dropdown"> -->
@@ -62,9 +68,6 @@
             <li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>
             <li><a href="/team/supporters.html">Supporters</a></li>
           </ul>
-        </li>
-        <li{% if page.slug == "venue" %} class="active"{% endif %}>
-          <a href="/venue.html">Venue</a>
         </li>
       </ul>
     </div>
